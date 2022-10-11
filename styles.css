@@ -1,12 +1,9 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Relaway", "Monsterrat", sans-serif;
   font-style: normal;
-  line-height: 1.87;
   color: #212121;
   background-color: #ffffff;
-  font-family: "Relaway", sans-serif;
-  font-family: "Monsterrat", sans-serif;
-}
+ }
 ul {
   list-style-type: none;
 }
@@ -38,6 +35,7 @@ a {
   color: black;
 }
 address {
+  color: #ffffff;
   color: rgba(255, 255, 255, 0.6);
   margin-left: 215px;
   text-decoration: none;
@@ -49,7 +47,7 @@ address {
 .letter-style2 {
   margin-top: 9px;
   line-height: 1.71;
-  color: #ffffff;
+  color: inherit;
 }
 
 .letter-style3 {
