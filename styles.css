@@ -1,8 +1,18 @@
+:root {
+  --black: #212121;
+  --second-black: #000000;
+  --blue: #2196f3;
+  --background-grey: #2f303a;
+  --white: #ffffff;
+  --second-white: #f5f4fa;
+  --silver: #757575;
+}
+
 body {
   font-family: "Roboto", "Relaway", "Monsterrat", sans-serif;
   font-style: normal;
-  color: #212121;
-  background-color: #ffffff;
+  color: var(--black);
+  background-color: var(--white);
 }
 ul {
   list-style-type: none;
@@ -17,7 +27,7 @@ ul {
   letter-spacing: 0.03em;
   text-align: left;
   text-decoration: none;
-  color: #2196f3;
+  color: var(--blue);
 }
 .logo2 {
   font-family: "Raleway";
@@ -28,14 +38,14 @@ ul {
   letter-spacing: 0.03em;
   text-align: left;
   text-decoration: none;
-  color: black;
+  color: var(--second-black);
 }
 a {
   text-decoration: none;
   color: black;
 }
 address {
-  color: #ffffff;
+  color: var(--white);
   color: rgba(255, 255, 255, 0.6);
   margin-left: 215px;
   text-decoration: none;
@@ -59,18 +69,20 @@ address {
 .portfolio-info {
   display: flex;
   letter-spacing: 0.02em;
+  color: var(--second-black);
 }
 .portfolio-info-second {
   display: flex;
-  justify-content: flex-end;
-  color: #757575;
-  text-align: right;
+   color: var(--silver);
+   flex-direction:row;
+  align-items:flex-end;
+  
 }
 .buttons {
   display: flex;
   justify-content: center;
-  background-color: #f5f4fa;
-  color: #212121;
+  background-color: var(--second-white);
+  color: var(--black);
 }
 
 .flex {
@@ -79,6 +91,7 @@ address {
 
 header {
   display: flex;
+  flex-direction: row;
   width: 1600px;
   height: 80px;
   left: 0px;
@@ -100,7 +113,7 @@ header {
   flex-wrap: wrap-reverse;
 }
 .footer-down {
-  background-color: #2f303a;
+  background-color: var(--background-grey);
   width: 1600px;
   height: 252px;
   left: 0px;
@@ -110,26 +123,27 @@ header {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 .dark-side {
   width: 1600px;
   height: 600px;
   left: 0px;
   top: 59px;
-  background-color: #2f303a;
+  background-color: var(--background-grey);
 }
 .wrapper {
   width: 1600px;
   left: 0px;
   top: 59px;
-  background-color: #2f303a;
+  background-color: var(--background-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .dokument-button {
-  background-color: #2196f3;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
+  background-color: var(--blue);
+  color: var(--white);
 }
 .wrapper-2 {
   width: 1170px;
@@ -154,12 +168,14 @@ h2 {
   text-align: center;
 }
 
-.link:hover {
-  color: #2196f3;
+.link:hover,
+.link:focus {
+  color: var(--blue);
 }
-.link2:hover {
+.link2:hover,
+.link2:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--blue);
 }
 .team {
   width: 1600px;
